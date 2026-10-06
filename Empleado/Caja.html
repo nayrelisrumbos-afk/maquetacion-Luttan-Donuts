@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja - Luttan Donuts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body class="admin">
+
+    
+    <aside class="sidebar">
+        <img src="img/luttan.jpeg" alt="Logo" width="45">
+        <p class="usuario">Diego Herrera<br><small>Empleado</small></p>
+
+         <nav class="d-flex flex-column gap-1">
+    <a href="PanelEmpleado.html">🏠 Inicio</a>
+    <a href="Ventas.html">🛒 Ventas</a>
+    <a href="Inventario.html">📦 Inventario</a>
+    <a href="Clientes.html">👥 Clientes</a>
+    <a href="Caja.html" class="activo">💰 Caja</a>
+    <a href="CierreCaja.html">📋 Cierre de caja</a>
+</nav>
+
+        <a href="#" class="mt-4 d-block">↪ Cerrar sesión</a>
+    </aside>
+
+    <main class="admin-contenido">
+
+     
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>
+                <h1 class="mb-0">Caja</h1>
+                <p class="text-muted small mb-0">Viernes, 15 de agosto de 2026</p>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <a href="#" class="btn-rosa">🔒 Cierre de caja</a>
+                <span class="bg-white rounded-pill px-3 py-1 text-danger small">
+                    👤 Diego Herrera <small class="text-muted">EMPLEADO</small>
+                </span>
+            </div>
+        </div>
+
+        <div class="aviso-verde mb-4">✅ Caja actualmente abierta · Turno iniciado a las 07:00 a.m. por Diego Herrera</div>
+
+        <!-- ESTADÍSTICAS -->
+        <div class="row mb-4">
+            <div class="col-md-4 mb-3">
+                <div class="stat">💵 <small class="text-muted">Total ingresos</small><h3 class="mb-0">$642,500</h3></div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="stat">📤 <small class="text-muted">Total egresos</small><h3 class="mb-0">$0</h3></div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="stat">💼 <small class="text-muted">Saldo actual</small><h3 class="mb-0">$642,500</h3></div>
+            </div>
+        </div>
+
+        <!-- TABLA -->
+        <div class="caja-tabla">
+            <h5 class="mb-3">Movimientos del turno</h5>
+
+            <table class="table tabla-admin mb-0">
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Tipo</th>
+                        <th>Descripción</th>
+                        <th>Ingreso</th>
+                        <th>Egreso</th>
+                        <th>Saldo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>07:00</td>
+                        <td><span class="bien">Ingreso</span></td>
+                        <td>Apertura caja</td>
+                        <td>$200,000</td>
+                        <td>-</td>
+                        <td>$200,000</td>
+                    </tr>
+                    <tr>
+                        <td>09:15</td>
+                        <td><span class="bien">Ingreso</span></td>
+                        <td>Venta #V-0041 — Juan Mera</td>
+                        <td>$56,500</td>
+                        <td>-</td>
+                        <td>$256,500</td>
+                    </tr>
+                    <tr>
+                        <td>10:30</td>
+                        <td><span class="bien">Ingreso</span></td>
+                        <td>Venta #V-0042 — Pedro Gómez</td>
+                        <td>$96,000</td>
+                        <td>-</td>
+                        <td>$352,500</td>
+                    </tr>
+                    <tr>
+                        <td>11:45</td>
+                        <td><span class="bien">Ingreso</span></td>
+                        <td>Venta #V-0043 — Luisa Vargas</td>
+                        <td>$28,000</td>
+                        <td>-</td>
+                        <td>$380,500</td>
+                    </tr>
+                    <tr>
+                        <td>12:08</td>
+                        <td><span class="bien">Ingreso</span></td>
+                        <td>Venta #V-0044 — Sofía Reyes</td>
+                        <td>$128,000</td>
+                        <td>-</td>
+                        <td>$508,500</td>
+                    </tr>
+                    <tr>
+                        <td>13:15</td>
+                        <td><span class="bien">Ingreso</span></td>
+                        <td>Venta #V-0045 — Carlos Ruiz</td>
+                        <td>$42,000</td>
+                        <td>-</td>
+                        <td>$550,500</td>
+                    </tr>
+                    <tr>
+                        <td>14:32</td>
+                        <td><span class="bien">Ingreso</span></td>
+                        <td>Venta #V-0046 — María López</td>
+                        <td>$85,000</td>
+                        <td>-</td>
+                        <td>$635,500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+</body>
+</html>

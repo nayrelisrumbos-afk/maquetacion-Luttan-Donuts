@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luttan Donuts - Iniciar sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body class="login-body">
+
+    <main class="login-tarjeta">
+        <img src="img/luttan.jpeg" alt="Logo" class="logo">
+        <h1>Luttan Donuts</h1>
+        <span class="etiqueta">Administrador</span>
+        <p class="subtitulo">Acceso exclusivo para administradores</p>
+
+        <h2>Inicio de sesión</h2>
+
+        <form action="PanelEmpleado.html" method="GET">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" class="form-control" placeholder="correo@luttandonuts.com">
+
+            <label for="clave">Contraseña</label>
+            <input type="password" id="clave" name="clave" class="form-control" placeholder="********">
+
+            <p class="ayuda">Demo: puedes dejar los campos vacíos y hacer clic en Iniciar sesión</p>
+
+            <button type="submit" class="boton-principal">Iniciar sesión</button>
+        </form>
+
+        <a href="#" class="enlace-olvido">¿Olvidaste tu contraseña?</a>
+
+        <p class="divisor">¿Ingresar con otro rol?</p>
+
+        <div class="roles">
+            <button class="boton-admin">👤 Administrador</button>
+            <button class="boton-empleado">👤 Empleado</button>
+        </div>
+
+        <a href="../Cliente/Index.html" class="btn btn-dark btn-sm mt-3">← Ir al sitio del cliente</a>
+    </main>
+
+    <button class="ayuda-flotante">?</button>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cierre de Caja - Luttan Donuts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+
+<body class="admin">
+
+
+    <aside class="sidebar">
+        <img src="img/luttan.jpeg" alt="Logo" width="45">
+        <p class="usuario">Alexa Sanchez<br><small>Empleado</small></p>
+
+        <nav class="d-flex flex-column gap-1">
+            <a href="PanelEmpleado.html">🏠 Inicio</a>
+            <a href="Ventas.html">🛒 Ventas</a>
+            <a href="Inventario.html">📦 Inventario</a>
+            <a href="Clientes.html">👥 Clientes</a>
+            <a href="Caja.html">💰 Caja</a>
+            <a href="CierreCaja.html" class="activo" >📋 Cierre de caja</a>
+        </nav>
+        <a href="#" class="mt-4 d-block">↪ Cerrar sesión</a>
+    </aside>
+
+    <main class="admin-contenido">
+
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>
+                <h1 class="mb-0">Cierre de Caja</h1>
+                <p class="text-muted small mb-0">Viernes, 15 de agosto de 2026</p>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <a href="Caja.html" class="btn-rosa">← Volver</a>
+                <span class="bg-white rounded-pill px-3 py-1 text-danger small">
+                    👤 Alexa S. <small class="text-muted">EMPLEADO</small>
+                </span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-7">
+
+
+                <div class="caja-tabla mb-4">
+                    <h4 class="mb-3">Resumen del cierre</h4>
+
+                    <div class="fila-cierre d-flex justify-content-between">
+                        <span>Ventas del día</span>
+                        <b class="verde">$350,000</b>
+                    </div>
+                    <div class="fila-cierre d-flex justify-content-between">
+                        <span>Egresos del día</span>
+                        <b class="rojo">$80,000</b>
+                    </div>
+                    <div class="fila-cierre d-flex justify-content-between">
+                        <span>Dinero esperado</span>
+                        <b>$270,000</b>
+                    </div>
+                </div>
+
+
+                <div class="caja-tabla">
+                    <h4 class="mb-3">Arqueo de caja</h4>
+
+                    <label class="small text-muted">Dinero contado en efectivo</label>
+                    <input type="text" class="form-control mb-3" value="$270,000">
+
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <div class="caja-verde text-center">
+                                <small>DINERO CONTADO</small>
+                                <h3 class="mb-0">$270,000</h3>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="caja-verde text-center">
+                                <small>DIFERENCIA</small>
+                                <h3 class="mb-0">$0</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label class="small text-muted">Observaciones</label>
+                    <textarea class="form-control mb-3" rows="2" placeholder="Sin novedad en el turno..."></textarea>
+
+                    <button class="btn-rosa w-100">✓ CONFIRMAR CIERRE DE CAJA</button>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

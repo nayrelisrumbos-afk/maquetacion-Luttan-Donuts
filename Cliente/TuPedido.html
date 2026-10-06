@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Pedido - Luttan Donuts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-danger fw-bold" href="Index.html">
+                <img src="img/luttan.jpeg" alt="Logo" width="40"> Luttan Donuts
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="Index.html">Index</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contactanos.html">Contáctanos</a></li>
+                </ul>
+                <a href="Carrito.html" class="btn btn-outline-danger btn-sm">🛒 Mi carrito</a>
+            </div>
+        </div>
+    </nav>
+
+  
+    <div class="container mt-4">
+        <p class="ubicacion">Index / Pedido</p>
+        <h1 class="titulo-carrito">Tu Pedido</h1>
+        <p class="subtitulo-carrito">Por favor revisa tus productos y completa los datos de entrega.</p>
+
+        <div class="row">
+
+            <!-- resumennn -->
+            <div class="col-md-7 ">
+                <div class="caja-carrito">
+                    <h4>Resumen de Pedido</h4>
+
+                    <div class="item-carrito">
+                        <div>
+                            <h5>Dona de Fresa</h5>
+                            <p>Precio unitario: $4.500</p>
+                        </div>
+                        <div class="cantidad-item">
+                            <button>-</button>
+                            <span>2</span>
+                            <button>+</button>
+                        </div>
+                        <p class="precio-item">$9.000</p>
+                    </div>
+
+                    <div class="item-carrito">
+                        <div>
+                            <h5>Dona Glaseada</h5>
+                            <p>Precio unitario: $5.000</p>
+                        </div>
+                        <div class="cantidad-item">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <p class="precio-item">$5.000</p>
+                    </div>
+
+                    <div class="item-carrito">
+                        <div>
+                            <h5>Caja Surtida x6</h5>
+                            <p>Precio unitario: $25.000</p>
+                        </div>
+                        <div class="cantidad-item">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <p class="precio-item">$25.000</p>
+                    </div>
+
+                    <div class="totales">
+                        <div class="fila"><span>Subtotal</span><span>$39.000</span></div>
+                        <div class="fila"><span>Domicilio (Sogamoso)</span><span>$5.000</span></div>
+                        <div class="fila total"><span>Total</span><span>$44.000</span></div>
+                    </div>
+                </div>
+
+                <a href="Catalogo.html" class="seguir">+ Seguir comprando</a>
+            </div>
+
+            <!-- lo de datos de envio y pago -->
+            <div class="col-md-5">
+                <div class="caja-carrito">
+                    <h4>Datos de Envío y Pago</h4>
+
+                    <form>
+                        <label>Nombre Completo *</label>
+                        <input type="text" class="campo" placeholder="Tu nombre completo">
+
+                        <label>Teléfono *</label>
+                        <input type="tel" class="campo" placeholder="300 000 0000">
+
+                        <label>Ciudad de Entrega *</label>
+                        <div class="ciudades">
+                            <button type="button" class="ciudadd">Sogamoso</button>
+                            <button type="button" class="ciudadd">Nobsa</button>
+                        </div>
+
+                        <label>Dirección de Entrega *</label>
+                        <input type="text" class="campo" placeholder="Tu dirección en Sogamoso">
+
+                        <label>Notas del Pedido</label>
+                        <textarea class="campo" rows="2" placeholder="Si es necesario, deja un comentario..."></textarea>
+
+                        <label>Método de Pago *</label>
+                        <div class="metodo">💵 Efectivo <small>Pago contra entrega</small></div>
+                        <div class="metodo">📱 Código QR <small>Nequi, Daviplata, Bancolombia</small></div>
+                        <div class="metodo">💳 Tarjeta <small>Crédito o débito</small></div>
+
+                        <div class="total-pagar">
+                            <small>Total a pagar</small>
+                            <p>$142.000 <small>(domicilio incluido)</small></p>
+                        </div>
+
+                        <button type="submit" class="btn-confirmar">Confirmar Pedido</button>
+
+                        <p class="aviso">Al confirmar, aceptas nuestros términos de servicio. Tu pedido será procesado de inmediato y recibirás confirmación por WhatsApp.</p>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <footer class="footer-oscuro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h5>Luttan Donuts</h5>
+                    <p>Las mejores donas artesanales de Sogamoso y Nobsa, Boyacá. Hechas con amor y los mejores ingredientes locales.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6>CONÓCENOS</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Servicio al cliente</a></li>
+                        <li><a href="#">Nuestras Sedes</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6>REDES SOCIALES</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>© 2026 Luttan Donuts. Todos los derechos reservados.</p>
+                <p>Sogamoso - Nobsa, Boyacá, Colombia</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

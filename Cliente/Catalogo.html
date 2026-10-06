@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luttan Donuts - Catálogo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+
+    <!-- MENÚ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-danger fw-bold" href="Index.html">
+                <img src="img/luttan.jpeg" alt="Logo" width="40"> Luttan Donuts
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="Index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contactanos.html">Contáctanos</a></li>
+                </ul>
+                <a href="Carrito.html" class="btn btn-outline-danger btn-sm">🛒 Mi carrito</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- TÍTULO -->
+    <section class="fondo-titulo p-4 mb-4">
+        <div class="container">
+            <p class="small text-muted mb-1">Index / Catálogo</p>
+            <h1 class="fw-bold text-danger">Nuestro Catálogo</h1>
+            <p class="text-muted mb-0">Descubre todas nuestras donas artesanales y bebidas</p>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <div class="container mb-5">
+
+        <div class="row align-items-center mb-4">
+            <div class="col-md-5 mb-3 mb-md-0">
+                <input type="text" class="form-control rounded-pill" placeholder="🔍 Buscar producto...">
+            </div>
+            <div class="col-md-7 text-md-end">
+                <button class="btn btn-danger btn-sm rounded-pill me-2">Todos</button>
+                <button class="btn btn-outline-secondary btn-sm rounded-pill me-2">Donas Dulces</button>
+                <button class="btn btn-outline-secondary btn-sm rounded-pill me-2">Especiales</button>
+                <button class="btn btn-outline-secondary btn-sm rounded-pill">Bebidas</button>
+            </div>
+        </div>
+
+        <p class="text-muted small mb-4">12 productos encontrados</p>
+
+        <div class="row">
+
+            <!-- Producto 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/DonaFresaCatalogo.jpeg" class="card-img-top" alt="Dona de Fresa">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Dona de Fresa</h5>
+                        <span class="badge text-bg-success mb-2">Disponible</span>
+                        <p class="card-text text-muted small">Suave dona glaseada con relleno de fresa natural.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h4 class="text-danger fw-bold mb-0">$4.500</h4>
+                            <button class="btn btn-danger btn-sm">🛒 Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/DonaGlaseadaCatalogo.jpeg" class="card-img-top" alt="Dona Glaseada">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Dona Glaseada</h5>
+                        <span class="badge text-bg-success mb-2">Disponible</span>
+                        <p class="card-text text-muted small">Dona clásica con glaseado artesanal de azúcar.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h4 class="text-danger fw-bold mb-0">$5.000</h4>
+                            <button class="btn btn-danger btn-sm">🛒 Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/DonaChocolateCatalogo.jpeg" class="card-img-top" alt="Dona de Chocolate">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Dona de Chocolate</h5>
+                        <span class="badge text-bg-success mb-2">Disponible</span>
+                        <p class="card-text text-muted small">Cobertura de chocolate belga oscuro con chispas.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h4 class="text-danger fw-bold mb-0">$4.000</h4>
+                            <button class="btn btn-danger btn-sm">🛒 Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/DonaArequipeCatalogo.jpeg" class="card-img-top" alt="Dona de Arequipe">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Dona de Arequipe</h5>
+                        <span class="badge text-bg-success mb-2">Disponible</span>
+                        <p class="card-text text-muted small">Rellena de arequipe boyacense con caramelo.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h4 class="text-danger fw-bold mb-0">$4.500</h4>
+                            <button class="btn btn-danger btn-sm">🛒 Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/DonaFrutosCatalogo.jpeg" class="card-img-top" alt="Dona de Frutos Rojos">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Dona de Frutos Rojos</h5>
+                        <span class="badge text-bg-success mb-2">Disponible</span>
+                        <p class="card-text text-muted small">Arándanos, moras y frambuesas silvestres.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h4 class="text-danger fw-bold mb-0">$5.000</h4>
+                            <button class="btn btn-danger btn-sm">🛒 Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/DonaOreoCatalogo.jpeg" class="card-img-top" alt="Dona de Oreo">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Dona de Oreo</h5>
+                        <span class="badge text-bg-success mb-2">Disponible</span>
+                        <p class="card-text text-muted small">Glaseado de vainilla con galleta Oreo triturada.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h4 class="text-danger fw-bold mb-0">$4.500</h4>
+                            <button class="btn btn-danger btn-sm">🛒 Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 7 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/ArcoirisCatalogo.jpeg" class="card-img-top" alt="Dona Arcoíris">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Dona Arcoíris</h5>
+                        <span class="badge text-bg-success mb-2">Disponible</span>
+                        <p class="card-text text-muted small">Deliciosa dona de colores y chispas de arcoíris.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h4 class="text-danger fw-bold mb-0">$4.000</h4>
+                            <button class="btn btn-danger btn-sm">🛒 Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 8 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/cajaCatalogo.jpeg" class="card-img-top" alt="Caja de donas">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Caja de Donas</h5>
+                        <span class="badge text-bg-success mb-2">Disponible</span>
+                        <p class="card-text text-muted small">Caja con 6 diferentes sabores de dona.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h4 class="text-danger fw-bold mb-0">$25.000</h4>
+                            <button class="btn btn-danger btn-sm">🛒 Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 9 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/GaseosaCatalogo.jpeg" class="card-img-top" alt="Gaseosas">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Gaseosas</h5>
+                        <span class="badge text-bg-success mb-2">Disponible</span>
+                        <p class="card-text text-muted small">Refrescantes bebidas gaseosas de diferentes sabores.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h4 class="text-danger fw-bold mb-0">$3.500</h4>
+                            <button class="btn btn-danger btn-sm">🛒 Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 10 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/DonaChispasCatalogo.jpeg" class="card-img-top" alt="Donas Brillantes">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Donas Brillantes</h5>
+                        <span class="badge text-bg-success mb-2">Disponible</span>
+                        <p class="card-text text-muted small">Donas con glaseado brillante, perfectas para regalar.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h4 class="text-danger fw-bold mb-0">$5.000</h4>
+                            <button class="btn btn-danger btn-sm">🛒 Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 11 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/HeladoCatalogo.jpeg" class="card-img-top" alt="Helado">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Helado</h5>
+                        <span class="badge text-bg-success mb-2">Disponible</span>
+                        <p class="card-text text-muted small">Cremoso helado ideal para tus donas favoritas.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h4 class="text-danger fw-bold mb-0">$3.000</h4>
+                            <button class="btn btn-danger btn-sm">🛒 Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 12 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/CafeAmericanoCatalogo.jpeg" class="card-img-top" alt="Café Americano">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Café Americano</h5>
+                        <span class="badge text-bg-success mb-2">Disponible</span>
+                        <p class="card-text text-muted small">Caliente café americano recién preparado.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h4 class="text-danger fw-bold mb-0">$4.000</h4>
+                            <button class="btn btn-danger btn-sm">🛒 Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="footer pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h5 class="fw-bold text-danger">Luttan Donuts</h5>
+                    <p class="small text-muted">Llevando felicidad en forma de dona a los hogares de Boyacá - hechas a mano con amor.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Contáctanos</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-muted text-decoration-none">Servicio al cliente</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Nuestras sedes</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Redes sociales</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-muted text-decoration-none">Instagram</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Facebook</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center text-muted small mb-0">© 2026 Luttan Donuts. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

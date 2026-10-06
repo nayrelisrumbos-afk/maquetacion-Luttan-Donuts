@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario - Luttan Donuts</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+
+<body class="admin">
+
+
+    <aside class="sidebar">
+        <img src="img/luttan.jpeg" alt="Logo" width="45">
+        <p class="usuario">Aixa Sanchez<br><small>Empleado</small></p>
+
+        <nav class="d-flex flex-column gap-1">
+            <a href="PanelEmpleado.html">🏠 Inicio</a>
+            <a href="Ventas.html">🛒 Ventas</a>
+            <a href="Inventario.html" class="activo">📦 Inventario</a>
+            <a href="Clientes.html">👥 Clientes</a>
+            <a href="Caja.html">💰 Caja</a>
+            <a href="CierreCaja.html">📋 Cierre de caja</a>
+        </nav>
+        <a href="#" class="salir">↪ Cerrar sesión</a>
+    </aside>
+
+
+    <main class="admin-contenido">
+
+        <h1>Inventario</h1>
+        <p class="fecha">Viernes, 28 de agosto de 2026</p>
+
+        <div class="aviso"> Vista de consulta — Solo el administrador puede modificar el inventario.</div>
+
+        <!-- ESTADÍSTICAS -->
+        <div class="estadisticas">
+            <div>✓ <b>Disponible</b>
+                <h3>28 items</h3>
+            </div>
+            <div>⚠ <b>Stock bajo</b>
+                <h3>6 items</h3>
+            </div>
+            <div>✕ <b>Agotado</b>
+                <h3>2 items</h3>
+            </div>
+        </div>
+
+        <!-- TABLA -->
+        <div class="caja-tabla">
+            <input type="text" class="buscador" placeholder="🔍 Buscar producto...">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Categoría</th>
+                        <th>Stock disponible</th>
+                        <th>Stock mínimo</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dona de Fresa</td>
+                        <td>Donas</td>
+                        <td>3 unid</td>
+                        <td>10 unid</td>
+                        <td><span class="bajo">Stock bajo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Dona de Chocolate</td>
+                        <td>Donas</td>
+                        <td>5 unid</td>
+                        <td>10 unid</td>
+                        <td><span class="bajo">Stock bajo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Dona Glaseada</td>
+                        <td>Donas</td>
+                        <td>24 unid</td>
+                        <td>10 unid</td>
+                        <td><span class="bien">Disponible</span></td>
+                    </tr>
+                    <tr>
+                        <td>Crema pastelera</td>
+                        <td>Insumos</td>
+                        <td>0.5 kg</td>
+                        <td>2 kg</td>
+                        <td><span class="mal">Agotado</span></td>
+                    </tr>
+                    <tr>
+                        <td>Harina premium</td>
+                        <td>Insumos</td>
+                        <td>1.2 kg</td>
+                        <td>5 kg</td>
+                        <td><span class="bajo">Stock bajo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Glaseado rosa</td>
+                        <td>Insumos</td>
+                        <td>1.5 kg</td>
+                        <td>2 kg</td>
+                        <td><span class="bien">Disponible</span></td>
+                    </tr>
+                    <tr>
+                        <td>Cajas pequeñas</td>
+                        <td>Empaque</td>
+                        <td>45 unid</td>
+                        <td>20 unid</td>
+                        <td><span class="bien">Disponible</span></td>
+                    </tr>
+                    <tr>
+                        <td>Bolsas kraft</td>
+                        <td>Empaque</td>
+                        <td>0 unid</td>
+                        <td>50 unid</td>
+                        <td><span class="mal">Agotado</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

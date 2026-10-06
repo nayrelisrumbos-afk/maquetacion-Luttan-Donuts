@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes - Luttan Donuts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body class="admin">
+
+    <aside class="sidebar">
+        <img src="img/luttan.jpeg" alt="Logo" width="45">
+        <p class="usuario">Alexa Sanchez<br><small>Empleado</small></p>
+
+       <nav class="d-flex flex-column gap-1">
+    <a href="PanelEmpleado.html">🏠 Inicio</a>
+    <a href="Ventas.html">🛒 Ventas</a>
+    <a href="Inventario.html">📦 Inventario</a>
+    <a href="Clientes.html" class="activo">👥 Clientes</a>
+    <a href="Caja.html">💰 Caja</a>
+    <a href="CierreCaja.html">📋 Cierre de caja</a>
+</nav>
+
+        <a href="#" class="mt-4 d-block">↪ Cerrar sesión</a>
+    </aside>
+
+    <main class="admin-contenido">
+
+      
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>
+                <h1 class="mb-0">Clientes</h1>
+                <p class="text-muted small mb-0">Viernes, 16 de agosto de 2026</p>
+            </div>
+            <span class="bg-white rounded-pill px-3 py-1 text-danger small">
+                 Aixa S..
+            </span>
+        </div>
+
+        <!-- TABLA -->
+        <div class="caja-tabla">
+            <input type="text" class="form-control rounded-pill mb-3" placeholder="🔍 Buscar cliente por nombre o teléfono...">
+
+            <table class="table tabla-admin mb-0">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Teléfono</th>
+                        <th>Correo</th>
+                        <th>Pedidos</th>
+                        <th>Estado</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>María López</td>
+                        <td>300-456-7890</td>
+                        <td>mlopez@email.com</td>
+                        <td>18</td>
+                        <td><span class="bien">Activo</span></td>
+                        <td><a href="#" class="btn-detalle">Ver</a></td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Ruiz</td>
+                        <td>311-234-5678</td>
+                        <td>cruiz@email.com</td>
+                        <td>8</td>
+                        <td><span class="bien">Activo</span></td>
+                        <td><a href="#" class="btn-detalle">Ver</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sofía Flores</td>
+                        <td>315-876-9012</td>
+                        <td>sflores@email.com</td>
+                        <td>20</td>
+                        <td><span class="bien">Activo</span></td>
+                        <td><a href="#" class="btn-detalle">Ver</a></td>
+                    </tr>
+                    <tr>
+                        <td>Juan Mejía</td>
+                        <td>320-345-6789</td>
+                        <td>jmejia@email.com</td>
+                        <td>3</td>
+                        <td><span class="mal">Inactivo</span></td>
+                        <td><a href="#" class="btn-detalle">Ver</a></td>
+                    </tr>
+                    <tr>
+                        <td>Luisa Vargas</td>
+                        <td>305-789-0123</td>
+                        <td>lvargas@email.com</td>
+                        <td>9</td>
+                        <td><span class="bien">Activo</span></td>
+                        <td><a href="#" class="btn-detalle">Ver</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+</body>
+</html>
